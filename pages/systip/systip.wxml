@@ -1,0 +1,23 @@
+<!--sys.wxml-->
+<import src="/utils/pageState/index.wxml" />
+<template is="pageState" data="{{...pageState}}" />
+<view class="container">
+  <view class="resultTit">已扫描到以下内容</view>
+	<view class="table1">
+		<view class="tr1">
+			<view class="th1">货物名称</view>
+			<view class="th1">数量</view>
+		</view>
+		<view class="tr1" wx:for="{{sysres}}"wx:for-index="idx"
+							wx:for-item="item" 
+							wx:key="idx">
+			<view class="td1">{{item.order_product.goods_sku_name}}</view>
+			<view class="td1">{{item.order_product.goods_count}}箱</view>
+		</view>
+	</view>
+	<view class="btnG">
+		<view class="btnOne" bindtap='back'>取消</view>
+		<view wx:if="{{ycl===false}}" class="btnOne btnOne1" bindtap="sub">处理订单</view>
+		<view class="btnOne" wx:if="{{ycl}}">已处理</view>
+	</view>
+</view>

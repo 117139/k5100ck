@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<view class="container">
+  <image src="/static/images/klogobg.jpg"></image>
+	<form class="logintk" bindsubmit="formSubmit">
+		<view class="lgmsg">
+			<!-- <view class="login_l">姓名</view> -->
+			<view class="login_r">
+				<input type="text" name="tel" placeholder='账号'/>
+			</view>
+		</view>
+		<view class="lgmsg">
+			<!-- <view class="login_l">电话</view> -->
+			<view class="login_r">
+				<input type="password" name="pwd" placeholder='密码'/>
+			</view>
+		</view>
+		<button class="definebtn" form-type="submit">提交</button>
+	</form>
+</view>

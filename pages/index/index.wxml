@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="idxbtn" bindtap="sys">
+		<image src="../../static/images/indexbtn_03.jpg"></image>
+	</view>
+  <view class="idxbtn" bindtap="order">
+		<image src="../../static/images/indexbtn_06.jpg"></image>
+	</view>
+</view>

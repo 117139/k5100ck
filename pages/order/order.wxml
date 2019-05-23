@@ -1,0 +1,37 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="ordername">提货点名称 : <text>{{store_house_name}}</text></view>
+	<view class="orderTime">
+		<text>提货日期 : </text>
+		<picker class="otime_r" bindchange="bindGsChange" mode="date"
+		  value="{{company}}" range="{{array}}" >
+			<view class="gs">
+				<text class="gsname">{{gsidx}}</text>
+				<text class="xjt"></text>
+			</view>
+		</picker>
+	</view>
+	<view class="ordername">当日共有订单 : <text>{{ordercount}}个</text></view>
+	<view class="ordername goodslist">商品信息列表 : </view>
+	<view class="table1">
+		<view class="tr1">
+			<view class="th1">货物名称</view>
+			<view class="th1">型号</view>
+			<view class="th1">总数量</view>
+			<view class="th1">已提货数量</view>
+			<view class="th1">待提货数量</view>
+		</view>
+		<view class="tr1" wx:if="{{goods.length==0}}">
+			<view class="td1">暂无订单</view>
+		</view>
+		<view class="tr1" wx:for="{{goods}}"wx:for-index="idx"
+							wx:for-item="item" 
+							wx:key="idx">
+			<view class="td1">{{item.name}}</view>
+			<view class="td1">{{item.typename}}</view>
+			<view class="td1">{{item.totalcount}}箱</view>
+			<view class="td1">{{item.getcount}}箱</view>
+			<view class="td1">{{item.ngetcount}}箱</view>
+		</view>
+	</view>
+</view>

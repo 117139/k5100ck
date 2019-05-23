@@ -1,0 +1,48 @@
+.container {
+	width: 100%;
+	background-color: #fff;
+  padding: 30rpx 28rpx 0;
+}
+.ordername {
+	width: 100%;
+  font-size: 28rpx;
+	color:#333;
+}
+.ordername text{
+	color: #fe0042;
+}
+.orderTime{
+	width: 100%;
+	font-size: 28rpx;
+	color:#333;
+	display: flex;
+	align-items: center;
+	margin: 15rpx 0 16rpx;
+}
+.otime_r{
+	
+	border: 2px solid #dcdcdc;
+	border-radius: 8rpx;
+	color: #fe0042;
+	display: flex;
+	margin-left: 10rpx;
+	
+}
+.gs{
+	width: 220rpx;
+	height: 60rpx;
+	padding: 14rpx;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.xjt{
+		width: 0;
+    border: 11rpx solid;
+    border-color:#a0a0a0 transparent transparent ;
+		margin-top: 11rpx;
+}
+.goodslist{
+	margin: 30rpx 0;
+}
