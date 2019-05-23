@@ -17,11 +17,7 @@ Page({
   },
   onLoad: function () {
     },
-  getUserInfo: function(e) {
-    
-  },
 	sys:function(){
-		
 		// wx.navigateTo({
 		// 	url:'/pages/systip/systip?code=1135061761'
 		// })
