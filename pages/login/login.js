@@ -40,6 +40,10 @@ Page({
 			return false;
 		}
 		//http://water5100.800123456.top/WebService.asmx/user_shipper_login
+    wx.showLoading({
+      title: '正在登陆',
+      mask:true
+    })
 		wx.request({
 			url:  app.IPurl1+'user_shipper_login',
 			data:  {
@@ -57,6 +61,7 @@ Page({
 			dataType:'json',
 			method:'POST',
 			success(res) {
+        wx.hideLoading()
 				console.log(res.data)
 				if(res.data.error==0){
 					wx.reLaunch({
@@ -70,7 +75,15 @@ Page({
 						title:res.data.returnstr
 					})
 				}
-			}
+			},
+      fail(err){
+        wx.hideLoading()
+        console.log(res.data)
+				wx.showToast({
+					icon:'none',
+					title:'操作失败'
+				})
+      }
 		})
 		// wx.showModal({
 		// 	title:JSON.stringify(e.detail.value)

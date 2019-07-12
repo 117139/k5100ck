@@ -6,12 +6,17 @@
 	<view class="table1">
 		<view class="tr1">
 			<view class="th1">货物名称</view>
+			<view class="th1">规格</view>
 			<view class="th1">数量</view>
+		</view>
+		<view wx:if="{{sysres.length==0}}" class="tr1">
+			<view class="td1">暂无数据</view>
 		</view>
 		<view class="tr1" wx:for="{{sysres}}"wx:for-index="idx"
 							wx:for-item="item" 
 							wx:key="idx">
 			<view class="td1">{{item.order_product.goods_sku_name}}</view>
+			<view class="td1">{{item.order_product.goods_unit}}</view>
 			<view class="td1">{{item.order_product.goods_count}}箱</view>
 		</view>
 	</view>

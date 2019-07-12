@@ -13,8 +13,8 @@
 		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.6",
-	"appid": "wx5d4d5c242daa33eb",
+	"libVersion": "2.7.1",
+	"appid": "wxe2ff2fb68e535f94",
 	"projectname": "k5100ck",
 	"debugOptions": {
 		"hidedInDevtools": []

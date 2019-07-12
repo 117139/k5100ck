@@ -116,11 +116,14 @@ Page({
 					// 	ycl:true
 					// })
 					
-					wx.navigateBack()
+					
 					wx.showToast({
 						icon:'none',
 						title:'无已支付订单'
 					})
+					setTimeout(function() {
+						wx.navigateBack()
+					}, 1000);
 				}
 				pageState1.finish()    // 切换为finish状态
 				  // pageState1.error()    // 切换为error状态
