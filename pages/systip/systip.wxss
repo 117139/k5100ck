@@ -30,3 +30,10 @@
 .btnOne1{
 	background-color: #135eac;
 }
+.dhrmsg{
+  width: 100%;
+  text-align: left;
+  font-size: 24rpx;
+	color: #333;
+  margin-bottom:20rpx;
+}

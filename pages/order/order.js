@@ -52,7 +52,7 @@ Page({
 				
 				if(res.data.error==-2){
 					app.checktoken(res.data.error)
-					that.onLoad()
+					// that.onLoad()
 				}
 				if(res.data.error==0){
 					let resultd=res.data

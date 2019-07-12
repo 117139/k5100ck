@@ -5,6 +5,7 @@ const app =getApp()
 Page({
   data: {
     sysres: [],
+    userdata:'',
 		oid:'',
 		ycl:false
   },
@@ -97,6 +98,7 @@ Page({
 					console.log(res.data)
 					that.setData({
 						sysres:resultd.list,
+            userdata:resultd,
 						oid:res.data.info.order_info_id
 					})
 				}
@@ -105,6 +107,7 @@ Page({
 					console.log(res.data)
 					that.setData({
 						sysres:resultd.list,
+            userdata: resultd,
 						ycl:true
 					})
 				}

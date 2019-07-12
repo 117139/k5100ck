@@ -1,6 +1,7 @@
 //app.js
 App({
 	IPurl1:'https://wx5100api.tdgjs.com/WebService.asmx/',
+  // IPurl1:'http://water5100.800123456.top/WebService.asmx/',
 	jkkey:'server_mima',
   onLaunch: function () {
     // 展示本地存储能力

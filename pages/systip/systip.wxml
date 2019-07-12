@@ -1,8 +1,14 @@
 <!--sys.wxml-->
 <import src="/utils/pageState/index.wxml" />
 <template is="pageState" data="{{...pageState}}" />
-<view class="container">
+<wxs src="../../utils/filter.wxs" module="filter" />
+<view class="container" wx:if="{{userdata.info}}">
   <view class="resultTit">已扫描到以下内容</view>
+  <view class='dhrmsg'>订货人姓名：{{userdata.info.user_member_name}}</view>
+  <view class='dhrmsg'>订货人手机号：{{filter.telReg(userdata.info.user_member_tel)}}</view>
+  <view class='dhrmsg'>创建时间：{{filter.dateFormat(userdata.info.order_time)}}</view>
+  <view class='dhrmsg'>支付时间：{{filter.dateFormat(userdata.info.payment_time)}}</view>
+  <view class='dhrmsg'>支付金额：{{filter.moneyFormat(userdata.info.order_price)}}</view>
 	<view class="table1">
 		<view class="tr1">
 			<view class="th1">货物名称</view>

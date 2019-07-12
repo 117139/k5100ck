@@ -48,12 +48,14 @@ Page({
 			url:  app.IPurl1+'user_shipper_login',
 			data:  {
 					key:'server_mima',
-					// code:res.code,
-					// tokenstr:that.data.tokenstr,
-					// nickname:uinfo.nickName,
-					// headpicurl:uinfo.avatarUrl,
-					user_name :formresult.tel,
-					password:formresult.pwd,
+				// 	// code:res.code,
+				// 	// tokenstr:that.data.tokenstr,
+				// 	// nickname:uinfo.nickName,
+        // // headpicurl:uinfo.avatarUrl,
+        user_name: formresult.tel,
+        password: formresult.pwd,
+        // user_name: "fwdsdm1",
+        // password: gwj5100,
 		    },
 			header: {
 				'content-type': 'application/x-www-form-urlencoded' 

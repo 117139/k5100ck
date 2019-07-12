@@ -18,9 +18,9 @@ Page({
   onLoad: function () {
     },
 	sys:function(){
-		// wx.navigateTo({
-		// 	url:'/pages/systip/systip?code=1309391988'
-		// })
+		wx.navigateTo({
+			url:'/pages/systip/systip?code=1309391988'
+		})
 		// 只允许从相机扫码
 		wx.scanCode({
 			onlyFromCamera: true,
